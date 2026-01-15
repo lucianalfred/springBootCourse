@@ -12,9 +12,7 @@ import com.lucianoalfredo.course.entities.User;
 public class UserResource {
 	@GetMapping
 	public ResponseEntity<User> finaAll(){
-		User u = new User(1L, "Maria", "maria@gmail.com", "99999", "12345");
 		User l = new User(1L, "Luciano", "la@gmail.com", "99999", "12345");
-		
 		return ResponseEntity.ok().body(l);
 	}
 

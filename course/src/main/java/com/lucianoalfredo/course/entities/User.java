@@ -3,6 +3,8 @@ package com.lucianoalfredo.course.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User implements Serializable{
 	
 	/**
@@ -27,43 +29,53 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
-	protected Long getId() {
+	@JsonProperty
+	private Long getId() {
 		return id;
 	}
-
-	protected void setId(Long id) {
+	
+	@JsonProperty
+	private void setId(Long id) {
 		this.id = id;
 	}
-
-	protected String getEmail() {
+	
+	@JsonProperty
+	private String getEmail() {
 		return email;
 	}
-
-	protected void setEmail(String email) {
+	
+	@JsonProperty
+	private void setEmail(String email) {
 		this.email = email;
 	}
-
-	protected String getPhone() {
+	
+	@JsonProperty
+	private String getPhone() {
 		return phone;
 	}
-
-	protected void setPhone(String phone) {
+	
+	@JsonProperty
+	private void setPhone(String phone) {
 		this.phone = phone;
 	}
-
-	protected String getPassword() {
+	
+	@JsonProperty
+	private String getPassword() {
 		return password;
 	}
-
-	protected void setPassword(String password) {
+	
+	@JsonProperty
+	private void setPassword(String password) {
 		this.password = password;
 	}
-
-	protected String getName() {
+	
+	@JsonProperty
+	private String getName() {
 		return name;
 	}
-
-	protected void setName(String name) {
+	
+	@JsonProperty
+	private void setName(String name) {
 		this.name = name;
 	}
 
