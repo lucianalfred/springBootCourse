@@ -13,13 +13,15 @@ public class User implements Serializable{
 	private String email;
 	private String phone;
 	private String password;
+	private String name;
 	
 	public User() {
 	}
 
-	public User(Long id, String email, String phone, String password) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
+		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.password = password;
@@ -57,6 +59,14 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
+	protected String getName() {
+		return name;
+	}
+
+	protected void setName(String name) {
+		this.name = name;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -74,7 +84,13 @@ public class User implements Serializable{
 		return Objects.equals(id, other.id);
 	}
 
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", email=" + email + ", phone=" + phone + ", password=" + password + ", name=" + name
+				+ "]";
+	}
 
+	
 	
 	
 }
