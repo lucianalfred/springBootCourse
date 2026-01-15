@@ -1,13 +1,13 @@
-package com.lucianoalfredo.demo;
+package com.lucianoalfredo.course;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootcourseApplication {
+public class CourseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootcourseApplication.class, args);
+		SpringApplication.run(CourseApplication.class, args);
 	}
 
 }

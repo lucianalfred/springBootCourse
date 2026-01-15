@@ -1,10 +1,10 @@
-package com.lucianoalfredo.demo;
+package com.lucianoalfredo.course;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootcourseApplicationTests {
+class CourseApplicationTests {
 
 	@Test
 	void contextLoads() {
