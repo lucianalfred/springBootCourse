@@ -1,6 +1,8 @@
 package com.lucianoalfredo.course.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,6 +30,9 @@ public class User implements Serializable{
 	private String phone;
 	private String password;
 	private String name;
+	
+	
+	private List<Order> orders =  new ArrayList<>();
 	
 	public User() {
 	}
@@ -108,12 +113,17 @@ public class User implements Serializable{
 		return Objects.equals(id, other.id);
 	}
 
+	public List<Order> getOrders() {
+		return orders;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", email=" + email + ", phone=" + phone + ", password=" + password + ", name=" + name
 				+ "]";
 	}
 
+	
 	
 	
 	
