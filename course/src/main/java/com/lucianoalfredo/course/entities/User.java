@@ -32,7 +32,7 @@ public class User implements Serializable{
 	private String password;
 	private String name;
 	
-	@OneToMany
+	@OneToMany(mappedBy="client")
 	private List<Order> orders =  new ArrayList<>();
 	
 	public User() {
